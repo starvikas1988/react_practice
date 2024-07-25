@@ -1,0 +1,33 @@
+/* styles.css */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+  }
+  
+  li {
+    position: relative;
+    padding-left: 20px; /* Space for the arrow */
+    margin-bottom: 10px; /* Space between list items */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  li a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+    display: block; /* Make the link cover the entire list item */
+  }
+  
+  li::before {
+    content: '→'; /* Arrow symbol */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em; /* Adjust the size of the arrow */
+    color: #000; /* Arrow color */
+  }
+  
+  li:hover {
+    background-color: #f0f0f0; /* Optional: Add a background color on hover */
+  }
+  
